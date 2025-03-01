@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<i-- 2 clickable image with audio and assigned positions -->
+<body>
+
+  <button id="playButton1"><img src = "images/Washroom.png" width = "20%" style="position:fixed; top: 10px; left: 10px;">
+  </button>
+  
+<button id="playButton2"><img src = "images/sleep.jpg" width = "20%" style="position:fixed; top: 10px; left: 300px;"> 
+ </button>
+
+<button id="playButton3"><img src = "images/bg.jpg" width = "20%" style="position:fixed; top: 10px; left: 600px;"> 
+ </button>
+
+ <audio id="audioPlayer1" src="Audio/GoToWashroom.mp3"< </audio>
+ <audio id="audioPlayer2" src="Audio/sleep.mp3"< </audio>
+ <audio id="audioPlayer3" src="https://media.geeksforgeeks.org/wp-content/uploads/20240912183739/chatbot-response.mp3"<
+ </audio>
+
+
+
+<script>
+  const audioPlayer1 = document.getElementById('audioPlayer1');
+  const playButton1 = document.getElementById('playButton1');
+  const audioPlayer2 = document.getElementById('audioPlayer2');
+  const playButton2 = document.getElementById('playButton2');
+  const audioPlayer3 = document.getElementById('audioPlayer3');
+  const playButton3 = document.getElementById('playButton3');
+
+   playButton1.addEventListener('click', () => {
+   audioPlayer1.play();});
+   playButton2.addEventListener('click', () => {
+   audioPlayer2.play();});
+   playButton3.addEventListener('click', () => {
+   audioPlayer3.play();});
+
+ </script>
+
+</body>
+</html>
